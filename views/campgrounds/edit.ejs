@@ -26,6 +26,14 @@
                     <div class="form-group">
                         <label for="cgdDesc">Short Description:</label>
                         <textarea rows="6" class="form-control" type="text" id="cgdDesc" placeholder="A beautiful, isolated campsite with stunning views all around..." name="campground[description]" required minlength="30"><%= campground.description %></textarea>
+                        <p class="tooltip"><em>Supports basic HTML formatting</em></p>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="cgdImage">Website:</label>
+                        <input class="form-control" type="text" id="cgdImage" placeholder="https://www.camping.com/rainycreek" value="<%= campground.site %>" name="campground[site]">
+                        <p class="tooltip"><em>Leave empty if campground does not have a website</em></p>
+                        <br>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-md btn-success btn-block">Submit!</button>
