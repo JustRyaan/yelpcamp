@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Sign up</h1>
+            <div style="width: 30%; margin: 30px auto;">
+                <form action="/register" method="POST" autocomplete="off">
+                    <div class="form-group">
+                        <label for="userfield">Username:</label>
+                        <input id="userfield" class="form-control" type="text" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="userfield">Password:</label>
+                        <input id="passfield" class="form-control" type="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-md btn-success btn-block">Register!</button>
+                    </div>
+                </form>
+                <p>Already have an account? <a href="/login">Sign in!</a></p>
+            </div>
+    </div>
+</div>
+<% include partials/footer %>

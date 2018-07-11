@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Create a New Campground</h1>
+            <div style="width: 30%; margin: 30px auto;">
+                <form action="/campgrounds" method="POST" autocomplete="off">
+                    <div class="form-group">
+                        <label for="cgdName">Campground Name:</label>
+                        <input class="form-control" type="text" id="cgdName" placeholder="Rainy Creek" name="name" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="cgdImage">Image URL:</label>
+                        <input class="form-control" type="text" id="cgdImage" placeholder="https://i.imgur.com/rainycreek.jpg" name="image" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cgdPrice">Price Per Night:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">£</span>
+                            <input type="number" min="0" class="form-control" id="cgdPrice" placeholder="To the nearest pound" name="price" required>
+                            <span class="input-group-addon">.00</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cgdDesc">Short Description:</label>
+                        <textarea rows="6" class="form-control" type="text" id="cgdDesc" placeholder="A beautiful, isolated campsite with stunning views all around..." name="desc" required minlength="30"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-md btn-success btn-block">Submit!</button>
+                    </div>
+                </form>
+                <a href="/campgrounds"><i class="fas fa-chevron-circle-left"></i> Back to campgrounds</a>
+            </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

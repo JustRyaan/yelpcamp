@@ -1,0 +1,30 @@
+.form-control:focus::-webkit-input-placeholder { color:transparent; }
+.form-control:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.form-control:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.form-control:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.fa-fire {
+    color: orange;
+}
+
+textarea {
+    resize: none;
+}
+
+.delete {
+    display: inline;
+}
+
+.navbar {
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
