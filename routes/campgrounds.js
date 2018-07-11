@@ -18,7 +18,7 @@ router.get("/", function(req, res){
 // Create - Add New Campground To DB
 router.post("/", middleware.isLoggedIn, function(req, res){
     // get data from form and add to campgrounds array/db
-    req.body.blog.body = req.sanitize(req.body.blog.body);
+    req.body.campground.description = req.sanitize(req.body.campground.description);
     var name = req.body.name;
     var price = req.body.price;
     var image = req.body.image;
