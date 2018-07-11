@@ -20,7 +20,9 @@
                             <input type="number" min="0" class="form-control" id="cgdPrice" placeholder="To the nearest pound" value="<%= campground.price %>" name="campground[price]" required step="none">
                             <span class="input-group-addon">.00</span>
                         </div>
+                        <p class="tooltip"><em>Set to 0 for a free campsite</em></p>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="cgdDesc">Short Description:</label>
                         <textarea rows="6" class="form-control" type="text" id="cgdDesc" placeholder="A beautiful, isolated campsite with stunning views all around..." name="campground[description]" required minlength="30"><%= campground.description %></textarea>

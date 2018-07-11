@@ -28,3 +28,9 @@ textarea {
 -webkit-border-radius: 0px;
 border-radius: 0px;
 }
+
+.tooltip {
+    font-size: 0.9em;
+    opacity: 0.5;
+    padding-top: 5px;
+}
