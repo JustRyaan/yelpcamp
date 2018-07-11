@@ -8,7 +8,6 @@ var express             = require("express"),
     Campground          = require("./models/campground"),
     Comment             = require("./models/comment"),
     User                = require("./models/user"),
-    seedDB              = require("./seeds"),
     flash               = require("connect-flash"),
     expressSanitizer    = require("express-sanitizer");
 
@@ -18,7 +17,6 @@ var commentRoutes       = require("./routes/comments"),
     indexRoutes         = require("./routes/index");
 
 mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://mitch:h07713cA1nE@ds135061.mlab.com:35061/yelpcamp");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -26,7 +24,6 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(expressSanitizer());
 app.use(flash());
-// seedDB(); // Seed the Database
 
 // Passport config
 app.use(require("express-session")({
